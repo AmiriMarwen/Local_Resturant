@@ -1,36 +1,24 @@
 <template>
     <div>
-        <div class="plansComp max-w-5xl mx-auto w-full h-full px-4 md:px-12 py-4">
-            <h2 class="font-bold font-inter text-4xl md:text-6xl px-10 py-5 ">✨ Visit us</h2>
-            <div class="text-center space-y-3 md:flex justify-between items-center">
-                <div class="md:w-1/2">
-                    <h2 class="text-2xl text-gray-500">Lsit amet.</h2>
-                    <p class="font-semibold">Lorem ipsum dolor, </p>
-                    <p class="font-semibold">Lorem ipsum dolor, </p>
+        <div class="max-w-7xl mx-auto w-full px-4 md:px-12 py-4">
+            <div class="socials md:flex justify-between">
+                <div class="w-full md:relative w-2/3 py-12 px-5 bg-black">
+                    <h3 class="text-white text-3xl font-bold py-5">RECEVOIR NOS MEILLEURES OFFRES !</h3>
+                    <input type="text" placeholder="Votre adresse e-mail" class="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded-full text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-full pr-10" />
+                    <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
+                        <!--  <i class="fas fa-arrow-right"></i> -->
+                    </span>
                 </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-2xl text-gray-500">adresse :</h2>
-                    <p class="font-semibold"> consectetur adipisicing</p>
-                    <p class="font-semibold"> adipisicing elit. Earum</p>
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-2xl text-gray-500">tel :</h2>
-                    <p class="font-semibold">+216 2356897</p>
-                    <p class="font-semibold">+216 2345893</p>
-                </div>
-                <div class="mx-auto w-1/2 md:w-1/2">
-                    <h2 class="text-2xl text-gray-500">Scial media</h2>
-                    <div class="flex justify-between h-50 w-100 space-x-3 ">
-                        <a href="#"><i class="fab fa-facebook p-3 rounded-full text-2xl "></i></a>
-                        <a href="#"><i class="fab fa-twitter p-3 rounded-full text-2xl "></i></a>
-                        <a href="#"><i class="fab fa-instagram p-3 rounded-full text-2xl "></i></a>
-                        <a href="#"><i class="fab fa-youtube p-3 rounded-full text-2xl "></i></a>
+                <div class="socials text-1xl w-full text-center mx-auto md:flex justify-between items-center py-10 px-5 bg-red-600">
+                    <h3 class="text-white text-2xl font-bold py-2 md:text-3xl">SOUIVEZ NOUS :</h3>
+                    <div class="list-socials w-1/2 space-x-2 mx-auto md:w-1/3 flex justify-between mx-10">
+                        <i class="fab fa-facebook text-2xl md:text-3xl text-white "></i>
+                        <i class="fab fa-twitter text-2xl md:text-3xl text-white "></i>
+                        <i class="fab fa-instagram text-2xl md:text-3xl text-white "></i>
+                        <i class="fab fa-youtube text-2xl md:text-3xl text-white "></i>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mapouter w-full ">
-            <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=32%20AV%207%20Novembre%201987,%20Tunisia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><a href="https://www.embedgooglemap.net"></a></div>
         </div>
     </div>
 </template>
@@ -47,4 +35,5 @@ export default {
 }
 </script>
 <style lang="css" scoped>
+
 </style>
