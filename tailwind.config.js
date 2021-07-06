@@ -4,21 +4,15 @@ module.exports = {
 
 
 
-  theme: {
+theme: {
     extend: {
-    	fontFamily: {
+      fontFamily: {
         'sans': ['Titillium Web', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'inter': ['Inter', 'sans-serif']
       },
-
-      backgroundImage: theme => ({
-        'cover': "url('/hero-cover.jpg')"        
-        })
-
-      
     },
-  },
+},
 
 
 

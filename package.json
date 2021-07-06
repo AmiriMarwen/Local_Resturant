@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-css": "npx tailwindcss -o src/assets/styles/index.css",
     "serve": "vue-cli-service serve",
-    "start": "nodemon server/index.js",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-css": "npx tailwindcss -o src/assets/styles/index.css",
+    "start": "nodemon server/index.js",
+    "dev": "node server/index.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "joi": "^17.4.0",
     "mongodb": "^3.6.9",
+    "mongoose": "^5.13.2",
     "monk": "^7.3.4",
     "morgan": "^1.10.0",
     "vue": "^2.6.11",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.13",
     "@vue/cli-service": "~4.5.0",
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
