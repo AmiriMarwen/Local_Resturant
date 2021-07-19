@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require('body-parser').json();
 const router = express.Router();
 const Food = require("./models/food");
 
@@ -12,7 +11,12 @@ router.get("/foods", async (req, res) => {
 // Post new food to mongodb database
 router.post("/foods", async (req, res) => {
   try {
-    const food = new Food({name: req.body.name, price: req.body.price, dileveryCoast: req.body.dileveryCoast, number: req.body.number})
+    const food = new Food(
+      { name: req.body.name,
+        price: req.body.price,
+        dileveryCoast: req.body.dileveryCoast,
+        number: req.body.number
+      })
     await food.save()
     res.status(200).send(food)
   } catch (error) {
